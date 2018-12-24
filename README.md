@@ -24,6 +24,10 @@ See [godot-settings-manager-demo](https://github.com/Calinou/godot-settings-mana
 
 ## Installation
 
+**This asset currently requires
+[Godot 3.1 alpha 4](https://godotengine.org/article/dev-snapshot-godot-3-1-alpha-4)
+or later.**
+
 - Clone this repository or
   [download a ZIP archive](https://github.com/Calinou/godot-settings-manager/archive/master.zip).
 - Add `addons/settings_manager/settings_manager.gd` as an autoload in your project's settings.
