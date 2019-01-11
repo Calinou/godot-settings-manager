@@ -39,11 +39,11 @@ func _ready() -> void:
 # Splits a single key string into a section and key.
 # This way, users can benefit from an API closer to ProjectSettings.
 func _split_section_key(key: String) -> Dictionary:
-	var section_key := key.split('/', true, 1)
+	var section_key := key.split("/", true, 1)
 
 	# A section is required, as ConfigFile does not permit saving keys in the "root" section
 	if section_key.size() != 2:
-		push_error("The key must be prefixed with a section (denoted using a \"/\" character).")
+		push_error('The key must be prefixed with a section (denoted using a "/" character).')
 		assert(false)
 
 	return {
