@@ -1,3 +1,5 @@
+*.gd linguist-language=GDScript
+
 # Exclude all top-level files and directories (except addons) from ZIP downloads.
 # This makes installing through the AssetLib easier, because no files and folders
 # need to be unchecked.
