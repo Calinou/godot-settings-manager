@@ -30,7 +30,7 @@ or later.**
 
 - Clone this repository or
   [download a ZIP archive](https://github.com/Calinou/godot-settings-manager/archive/master.zip).
-- Add `addons/settings_manager/settings_manager.gd` as an autoload in your project's settings.
+- Add `addons/settings_manager/settings_manager.tscn` as an autoload in your project's settings.
   You can give it any name you wish, but it's recommended to use `SettingsManager`
   as a convention.
 

@@ -20,16 +20,11 @@ var config_files := {
 	},
 }
 
-# Used to save when no properties are being changed (debouncing)
+# Used to save when no properties are being changed (debouncing).
 # This way, settings can be preserved in case of a crash
-var save_timer := Timer.new()
+onready var save_timer := $SaveTimer as Timer
 
 func _ready() -> void:
-	add_child(save_timer)
-	save_timer.connect("timeout", self, "save")
-	save_timer.one_shot = true
-	save_timer.wait_time = 5
-
 	# Load all configuration files
 	for key in config_files:
 		var config_file: Dictionary = config_files[key]
